@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * Escriba en lenguaje natural una descripcion de los objetos
  * que caben en el concepto de la clase Universidad.
  * 
- * @author (Milton Jes&uacute;s Vera Contreras - miltonjesusvc@ufps.edu.co) 
+ * @author Jeison Ferrer Ortega 115200 (https://github.com/joferrer/Universidad)
  * @version Math.sin(Math.PI-Double.MIN_VALUE) :) 
  */
 public class Universidad

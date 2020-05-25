@@ -5,7 +5,7 @@
  * Escriba en lenguaje natural una descripcion de los objetos
  * que caben en el concepto de la clase Inscripcion.
  * 
- * @author (Milton Jes&uacute;s Vera Contreras - miltonjesusvc@ufps.edu.co) 
+ * @author Jeison Ferrer Ortega 115200 (https://github.com/joferrer/Universidad)
  * @version Math.sin(Math.PI-Double.MIN_VALUE) :) 
  */
 public class Inscripcion
@@ -33,7 +33,10 @@ public class Inscripcion
     public boolean equals(Object other)
     {
       //COMPLETE
-      return false;
+      Inscripcion otro = (Inscripcion)other;
+      boolean iguales= otro.getAlumno().equals(this.alumno)
+      &&otro.getMateria().equals(this.getMateria());
+      return iguales;
     }//fin equals    
 
 }//fin class Inscripcion

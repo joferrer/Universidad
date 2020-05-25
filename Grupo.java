@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Escriba en lenguaje natural una descripcion de los objetos
  * que caben en el concepto de la clase Grupo.
  * 
- * @author (Milton Jes&uacute;s Vera Contreras - miltonjesusvc@ufps.edu.co) 
+ * @author Jeison Ferrer Ortega 115200 (https://github.com/joferrer/Universidad)
  * @version Math.sin(Math.PI-Double.MIN_VALUE) :) 
  */
 public class Grupo
@@ -17,18 +17,34 @@ public class Grupo
   
   public Grupo(Materia materia)
   {
+      this.materia= materia;
+      alumnos= new Alumno[materia.getMaximoDeAlumnosPorGrupo()];
+      
     //COMPLETE
   }//fin construuctor
   
   public boolean agregarAlumno(Alumno alumno)
   {
     boolean puedeAgregar = false;
+    if(contadorDeAlumnos<alumnos.length&&!contieneAlumno(alumno)){
+        alumnos[contadorDeAlumnos]=alumno;
+        contadorDeAlumnos++;
+        puedeAgregar=true;
+    }
     //COMPLETE
     return puedeAgregar;
   }//fin agregarAlumno
   
   public boolean contieneAlumno(Alumno alumno){
     boolean rta = false; 
+    for(Alumno x :this.alumnos){
+    
+        if(x!=null&&x.equals(alumno))
+        {
+            rta=true;
+            break;
+        }
+    }
     //COMPLETE
     return rta;
   }

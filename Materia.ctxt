@@ -1,8 +1,14 @@
 #BlueJ class context
 comment0.target=Materia
-comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripcion\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Materia.\r\n\ \r\n\ @author\ (Milton\ Jes&uacute;s\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\ \r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
+comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripcion\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Materia.\r\n\ \r\n\ @author\ Jeison\ Ferrer\ Ortega\ 115200\ (https\://github.com/joferrer/Universidad)\r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
 comment1.params=nombre\ maximoDeAlumnosPorGrupo
 comment1.target=Materia(java.lang.String,\ int)
+comment10.params=alumno
+comment10.target=boolean\ estaInscrito(Alumno)
+comment10.text=\ \r\n\ Este\ metodo\ verifica\ si\ un\ alumno\ ya\ estaba\ incrito\ en\ la\ materia.\r\n
+comment11.params=i\ j
+comment11.target=int\ mcd(int,\ int)
+comment11.text=\r\n\ Metodo\ recursivo\ que\ halla\ el\ maximo\ com\u00FAn\ divisor\ entre\ dos\ numeros\ enteros\ \r\n
 comment2.params=alumno
 comment2.target=boolean\ inscribir(Alumno)
 comment3.params=
@@ -25,4 +31,4 @@ comment8.text=
 comment9.params=other
 comment9.target=boolean\ equals(java.lang.Object)
 comment9.text=Compara\ el\ nombre\ de\ this\ con\ un\ String\ u\ otro\ Materia
-numComments=10
+numComments=12

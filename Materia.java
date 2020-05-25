@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Escriba en lenguaje natural una descripcion de los objetos
  * que caben en el concepto de la clase Materia.
  * 
- * @author (Milton Jes&uacute;s Vera Contreras - miltonjesusvc@ufps.edu.co) 
+ * @author Jeison Ferrer Ortega 115200 (https://github.com/joferrer/Universidad)
  * @version Math.sin(Math.PI-Double.MIN_VALUE) :) 
  */
 public class Materia
@@ -21,19 +21,35 @@ public class Materia
       //COMPLETE
       this.nombre = nombre;
       this.maximoDeAlumnosPorGrupo=maximoDeAlumnosPorGrupo;
+      
+      this.inscripciones= new ArrayList();
     }//fin constructor
     
     public boolean inscribir(Alumno alumno)
     {
       boolean inscribio = false;
-      inscribio= !alumno.tienePromedioCondicional()&&!noEstaIncrito();
+    
+      inscribio= !alumno.tienePromedioCondicional()&&!estaInscrito(alumno);
+      if(inscribio)inscripciones.add(new Inscripcion (alumno,this));
       //COMPLETE
       return inscribio;
     }//fin inscribir
     
     public int generarGrupos()
     {
+       this.grupos= new ArrayList();
       int totalGrupos = 0;
+      totalGrupos= inscripciones.size()/this.maximoDeAlumnosPorGrupo;
+      int cont=0; //Guarda la ultima inscripción que se agregó
+      
+      for(int i=0;i<totalGrupos;i++){
+          Grupo grup=new Grupo(this);
+          for(int j=0;j<maximoDeAlumnosPorGrupo;j++){
+              grup.agregarAlumno(inscripciones.get(cont).getAlumno());
+              cont++;
+          }
+          grupos.add(grup);
+      }
       //COMPLETE      
       return totalGrupos;
       
@@ -75,8 +91,25 @@ public class Materia
       return iguales;
   
     }//fin equals
-    public boolean estaIncrito(Alumno alumno){
-        for(int i=0;i<this.inscripciones){}
+    /** 
+     * Este metodo verifica si un alumno ya estaba incrito en la materia.
+    */
+    public boolean estaInscrito(Alumno alumno){
+        boolean yaEsta=false;
+        for(int i=0;i<this.inscripciones.size();i++){
+            if(this.inscripciones.get(i).alumno.equals(alumno)) {
+                yaEsta=true;
+                break;
+            }
+        }
+        return yaEsta;
+    }
+    /**
+     * Metodo recursivo que halla el maximo común divisor entre dos numeros enteros 
+     */
+    public int mcd(int i, int j){
+        if(j==0) return i;
+        else return mcd(j,i%j);
     }
 
 }//fin class Materia

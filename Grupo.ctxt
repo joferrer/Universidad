@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Grupo
-comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripcion\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Grupo.\r\n\ \r\n\ @author\ (Milton\ Jes&uacute;s\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\ \r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
+comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripcion\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Grupo.\r\n\ \r\n\ @author\ Jeison\ Ferrer\ Ortega\ 115200\ (https\://github.com/joferrer/Universidad)\r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
 comment1.params=materia
 comment1.target=Grupo(Materia)
 comment2.params=alumno
